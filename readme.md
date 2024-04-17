@@ -28,7 +28,7 @@ Tracks how long you've been working (aka jamming), and reminds you to take break
     - play sound
     - boolean: count towards total
 - presets
-  > maybe these can be shared by URL?
+  > custom: maybe shared by URL?
   - pomodoro
     - duration: 25:00
     - break: 5:00
@@ -46,6 +46,11 @@ Tracks how long you've been working (aka jamming), and reminds you to take break
 
 ### tasks/phases
 
+- [ ] follow setup steps from ship-fast
+  - [ ] skip database
+  - [ ] skip stripe (for now, we'll set this up later)
+  - [ ] skip mailgun
+  - [ ] deploy to vercel?
 - [ ] outline page urls
 - [ ] Settings/Start page
   - [ ] all the fields for the session, maybe model off of Marinara Timer
