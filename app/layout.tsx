@@ -1,10 +1,11 @@
-import { ReactNode } from "react";
-import { Inter } from "next/font/google";
-import { Viewport } from "next";
-import PlausibleProvider from "next-plausible";
-import { getSEOTags } from "@/libs/seo";
 import ClientLayout from "@/components/LayoutClient";
 import config from "@/config";
+import { getSEOTags } from "@/libs/seo";
+import { Analytics } from "@vercel/analytics/react";
+import { Viewport } from "next";
+import PlausibleProvider from "next-plausible";
+import { Inter } from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
 
 const font = Inter({ subsets: ["latin"] });
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </head>
       )}
       <body>
+        <Analytics />
         {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>
       </body>
