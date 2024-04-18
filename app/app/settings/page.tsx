@@ -1,5 +1,5 @@
 import { z } from "zod";
-import * as time from "../__utils/time";
+import * as time from "../../__utils/time";
 
 const onComplete = z.object({
   showDesktopNotification: z.boolean().default(true),
